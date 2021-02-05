@@ -13,6 +13,10 @@ import org.springframework.stereotype.Component;
 public class HelloApplicationRunner  implements ApplicationRunner{
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        System.out.println("ApplicationRunner...run....");
+        //可以写一个方法在这里执行
+        for (int i = 0; i < 10 ; i++) {
+            System.out.println(i);
+        }
+//        System.out.println("ApplicationRunner...run....");
     }
 }
